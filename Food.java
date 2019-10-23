@@ -21,7 +21,7 @@ public class Food{
 	boolean ratioCr = numCrackers / numCampers >= 2;
 	boolean ratioM = numMarshmallows / numCampers>= 1;
 	boolean ratioC = numChocolates / numCampers >=1;
-	return (ratioCr && ratioCr && ratioM && ratioC && isCampfireLit);
+	return (ratioCr && ratioM && ratioC && isCampfireLit);
   }
 
   /**
