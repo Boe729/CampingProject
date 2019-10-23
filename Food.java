@@ -153,10 +153,8 @@ return 1;
 if(numCampers<9){
 	return numCampers;
 }
-int toCheck = numCampers % 9;
-int toCheck2 = numCampers - toCheck;
-int toCheck3 = toCheck2 / 9;
-int checkedSandwiches = numCampers + toCheck3; 
+
+
 for (int x =  1; x <= checkedSandwiches; x++){
 	if(x % 9 == 0){
 		System.out.println(x + " :moldy!");
@@ -164,6 +162,7 @@ for (int x =  1; x <= checkedSandwiches; x++){
 	else{
 	System.out.println(x);
 	}
+	reutrn x;
 }
 return checkedSandwiches;
   }
