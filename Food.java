@@ -107,7 +107,7 @@ if(plannedFood.equals("Surf and turf")){
 	return true;
 }
 else{
-	return dislikedFood.equals(plannedFood);
+	return !(dislikedFood.equals(plannedFood));
 }
   }
 
