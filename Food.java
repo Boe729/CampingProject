@@ -153,7 +153,9 @@ return 1;
 if(numCampers<9){
 	return numCampers;
 }
-
+int check1= numCampers % 9;
+int check2= (numCampers - check1)/9;
+int checkedSandwiches = check2 + numCampers;
 
 for (int x =  1; x <= checkedSandwiches; x++){
 	if(x % 9 == 0){
@@ -162,7 +164,7 @@ for (int x =  1; x <= checkedSandwiches; x++){
 	else{
 	System.out.println(x);
 	}
-	reutrn x;
+	
 }
 return checkedSandwiches;
   }
@@ -179,8 +181,8 @@ return checkedSandwiches;
 	System.out.println(benman2);
 	int benman1 = countMarshmallows(8, 3);
 	System.out.println(benman1);
-	int ben2 = SandwichCheck(48);
-	System.out.println(ben2);
+
+	
 	countSandwiches(60);
   }
 }
